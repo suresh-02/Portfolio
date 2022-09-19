@@ -15,7 +15,7 @@ const Intro = () => {
 
           <Typed
             className="md:text-4xl z-[-10] sm:text-2xl pl-2 md:pl-4  text-[25px]  text-[#00df9a]"
-            strings={["FrontEnd Devoloper", "Graduand", ""]}
+            strings={["FrontEnd Devloper", "Graduand", "Software Engineer"]}
             typeSpeed={60}
             backSpeed={60}
             loop
