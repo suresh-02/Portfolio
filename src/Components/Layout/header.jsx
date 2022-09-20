@@ -31,7 +31,7 @@ const Header = () => {
       </ul>
       <div onClick={HandleNav} className="block md:hidden">
         {!nav ? (
-          <AiOutlineMenuUnfold color="white" size={20} />
+          <AiOutlineMenuUnfold className="fiexd" color="white" size={20} />
         ) : (
           <AiOutlineClose color="white" size={20} />
         )}
