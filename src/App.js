@@ -9,12 +9,12 @@ import Education from "./Components/Content/education";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Intro />
-      <About />
+      {/* <Header /> */}
+      {/* <Intro />
+      <About /> */}
       <Skills />
-      <Intrest />
-      <Education />
+      {/* <Intrest />
+      <Education /> */}
     </div>
   );
 }

@@ -30,20 +30,27 @@ const Header = () => {
         </a>
       </ul>
       <div onClick={HandleNav} className="block md:hidden">
-        {!nav ? (
-          <AiOutlineMenuUnfold className="fiexd" color="white" size={20} />
-        ) : (
-          <AiOutlineClose color="white" size={20} />
-        )}
+        {!nav ? <AiOutlineMenuUnfold color="white" size={20} /> : ""}
       </div>
       <div
         className={
           nav
-            ? "fixed left-0 text-white md:hidden top-0 border-r border-b border-b-gray-900 border-r-gray-900 w-[90%] text-left  ml-0 p-2 h-[63%] bg-[#000300] ease-in-out duration-500"
+            ? "fixed left-0 text-white md:hidden top-0 border-r border-b border-b-gray-900 border-r-gray-900 w-[100%] text-left  ml-0 p-2 h-[63%] bg-[#000300] ease-in-out duration-500"
             : " fixed left-[-100%]"
         }
       >
-        <h1 className=" z-20 text-4xl md:hidden text-[#00df9a]">Portfolio.</h1>
+        <div className="flex items-center justify-between">
+          <h1 className=" z-20 text-4xl md:hidden text-[#00df9a]">
+            Portfolio.
+          </h1>
+          <div onClick={HandleNav} className="block md:hidden">
+            {!nav ? (
+              <AiOutlineMenuUnfold color="white" size={20} />
+            ) : (
+              <AiOutlineClose color="white" size={20} />
+            )}
+          </div>
+        </div>
 
         <div className="uppercase font-bold flex flex-col  ">
           <a href="#home" className="p-4 border-b border-b-gray-700 ">
