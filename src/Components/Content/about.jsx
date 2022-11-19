@@ -20,7 +20,7 @@ const About = () => {
             communicate``
           </p>
           <a
-            href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+            href="https://www.linkedin.com/in/suresh-hariharan-89376a21b/"
             className="w-[100px] h-[50px] bg-black text-[#00df9a] justify-center rounded-lg font-bold p-3 mx-auto my-4"
           >
             Connect
