@@ -14,7 +14,7 @@ const Intro = () => {
           <p className="md:  text-4xl sm:text-2xl  text-[25px] py-4">I am a </p>
 
           <Typed
-            className="md:text-4xl z-[-10] sm:text-2xl pl-2 md:pl-4  text-[25px]  text-[#FF00BF]"
+            className="md:text-4xl z-[-10] sm:text-2xl pl-2 md:pl-4  text-[25px]  text-[#00df9a]"
             strings={["FrontEnd Devloper", "Graduand", "Software Engineer"]}
             typeSpeed={60}
             backSpeed={60}
