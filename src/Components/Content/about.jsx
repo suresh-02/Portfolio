@@ -23,7 +23,7 @@ const About = () => {
           </p>
           <a
             href="https://www.linkedin.com/in/suresh-hariharan-89376a21b/"
-            className="w-[100px] h-[50px] bg-black text-[#00df9a] justify-center rounded-lg font-bold p-3 mx-auto my-4"
+            className="w-[100px] h-[50px] bg-black text-[#FF00BF] justify-center rounded-lg font-bold p-3 mx-auto my-4"
           >
             Connect
           </a>
