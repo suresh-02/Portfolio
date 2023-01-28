@@ -7,7 +7,7 @@ const Intrest = () => {
       <div className="max-w-[1240px]  mx-auto grid md:grid-cols-2 ">
         <img
           className="h-[500px] mx-auto mr-[30px]  w-[600px] hidden sm:block  rounded-lg"
-          src={intrestimg}
+          src="https://angular.io/generated/images/marketing/home/any-size.svg"
         />
         <div className="flex flex-col justify-center  ">
           <h1 className="text-[#00df9a] font-bold md:text-6xl sm:text-5xl md:py-[0] text-4xl py-[20px]">

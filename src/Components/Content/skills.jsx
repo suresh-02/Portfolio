@@ -13,9 +13,9 @@ import { TbBrandNextjs, TbBrandTailwind } from "react-icons/tb";
 
 export default function skills() {
   return (
-    <div className="p-[50px] mx-auto">
+    <div className="p-[50px] mx-auto " id="intr">
       <h1 className=" text-6xl font-bold py-[50px] max-w-max mx-auto text-white">
-        Skills
+        Technology Skills.
       </h1>
       <div className="grid md:grid-cols-5 grid-cols-2 gap-[50px] justify-items-center items-center ">
         <div className="">

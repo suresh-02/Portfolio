@@ -10,7 +10,9 @@ const Header = () => {
   };
   return (
     <div className="flex items-center justify-between mx-auto  px-4  w-full top-0  z-20">
-      <h1 className=" text-4xl text-[#00df9a]">Portfolio.</h1>
+      <h1 className=" bg-[#00df9a] text-4xl font-bold p-[3px] text-black">
+        SH
+      </h1>
 
       <ul className="text-white   hidden md:flex ">
         <a href="#home" className="p-4 ">
@@ -30,7 +32,7 @@ const Header = () => {
         </a>
       </ul>
       <div onClick={HandleNav} className="block md:hidden">
-        {!nav ? <AiOutlineMenuUnfold color="white" size={20} /> : ""}
+        {!nav ? <AiOutlineMenuUnfold color="white" size={20} /> : ""}``
       </div>
       <div
         className={

@@ -14,12 +14,12 @@ const About = () => {
             Let me Tell About Myself..!
           </h1>
           <p className="font-bold md:text-[20px] md:mx-0 py-4 mt-10">
-            Hi! myself Suresh Hariharan. i'm from Tambaram , Chennai, TN, IN. I
-            love to Create Websites , solve problems in programming and l also
-            love to explore new technologies. I am looking for a challenging job
-            where I can expose my talents and knowledge. Looking forward to
-            learn new many things and be reason for the growth of the
-            organisation.
+            Hello! My name is Suresh. Currently, I'm a college student pursuing
+            B.E in Chennai,India.I enjoy building logical and functional aspects
+            of a web applications and websites. My interest in web development
+            started back in 2022 when I started exploring basic HTML tags in
+            code editor. Since then I am enjoying the journey of learning as
+            well as building web apps.
           </p>
           <a
             href="https://www.linkedin.com/in/suresh-hariharan-89376a21b/"
