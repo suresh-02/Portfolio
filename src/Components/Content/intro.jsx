@@ -2,8 +2,8 @@ import React from "react";
 import Typed from "react-typed";
 const Intro = () => {
   return (
-    <div id="home" className="text-white pb-[100px] ">
-      <div className="max-w-[800px] w-full mt-[100px]  h-[100%] mx-auto text-center flex flex-col justify-center ">
+    <div id="home" className="text-white pb-[100px] h-[100vh] ">
+      <div className="  lg:max-w-[1200px] w-full   h-[100%] mx-auto text-center flex flex-col items-center justify-center ">
         <p className="text-[#00df9a] font-bold text-4xl p-2">
           Hi Welcome to my portfolio
         </p>
@@ -21,6 +21,7 @@ const Intro = () => {
             loop
           />
         </div>
+        <p className="text-white  text-2xl mt-[50px] px-4 md:text-4xl">An aspiring Frontend developer, with a passion in making user interactive websites.</p>
       </div>
     </div>
   );

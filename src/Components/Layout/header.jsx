@@ -9,7 +9,7 @@ const Header = () => {
     setNav(!nav);
   };
   return (
-    <div className="flex items-center justify-between mx-auto  px-4  w-full top-0  z-20">
+    <div className="flex items-center fixed p-4 bg-black justify-between mx-auto  px-4  w-full top-0  z-20">
       <h1 className=" bg-[#00df9a] text-4xl font-bold p-[3px] text-black">
         SH
       </h1>
@@ -58,16 +58,16 @@ const Header = () => {
           <a href="#home" className="p-4 border-b border-b-gray-700 ">
             Home
           </a>
-          <a href="#aboutsec" className="p-4 border-b border-b-gray-700 ">
+          <a href="#about" className="p-4 border-b border-b-gray-700 ">
             About
           </a>
-          <a href="#skill" className="p-4 border-b border-b-gray-700">
+          <a href="#skills" className="p-4 border-b border-b-gray-700">
             Skills
           </a>
-          <a href="#intr" className="p-4 border-b  border-b-gray-700">
+          <a href="#intrest" className="p-4 border-b  border-b-gray-700">
             Intrests
           </a>
-          <a href="#edu" className="p-4 border-b-gray-700">
+          <a href="#education" className="p-4 border-b-gray-700">
             Education
           </a>
         </div>
