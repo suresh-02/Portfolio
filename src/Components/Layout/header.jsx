@@ -15,19 +15,20 @@ const Header = () => {
       </h1>
 
       <ul className="text-white   hidden md:flex ">
-        <a href="#home" className="p-4 ">
+        <a href="#home" className="p-4 text-[#eb5939] border-b-[#00df9a] ">
           Home
         </a>
-        <a href="#aboutsec" className="p-4 ">
+        <a href="#about" className="p-4 text-[#eb5939]  border-b-[#00df9a]">
           About
         </a>
-        <a href="#skill" className="p-4 ">
+        <a href="#skills" className="p-4 text-[#eb5939] border-b-[#00df9a]">
           Skills
         </a>
-        <a href="#intr" className="p-4 ">
+        <a href="#intrest" className="p-4  text-[#eb5939] border-b-[#00df9a] ">
           Intrests
         </a>
-        <a href="#edu" className="p-4 ">
+        <a href="#works" className="p-4 text-[#eb5939] border-b-[#00df9a]">works</a>
+        <a href="#education" className="p-4 text-[#eb5939] border-b-[#00df9a]">
           Education
         </a>
       </ul>
@@ -54,20 +55,20 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="uppercase font-bold flex flex-col  ">
-          <a href="#home" className="p-4 border-b border-b-gray-700 ">
+        <div className="uppercase font-bold flex flex-col   ">
+          <a href="#home" className="p-4 text-[#eb5939] border-b border-b-gray-700 ">
             Home
           </a>
-          <a href="#about" className="p-4 border-b border-b-gray-700 ">
+          <a href="#about" className="p-4 text-[#eb5939] border-b border-b-gray-700 ">
             About
           </a>
-          <a href="#skills" className="p-4 border-b border-b-gray-700">
+          <a href="#skills" className="p-4 text-[#eb5939] border-b border-b-gray-700">
             Skills
           </a>
-          <a href="#intrest" className="p-4 border-b  border-b-gray-700">
+          <a href="#intrest" className="p-4 text-[#eb5939] border-b  border-b-gray-700">
             Intrests
           </a>
-          <a href="#education" className="p-4 border-b-gray-700">
+          <a href="#education" className="p-4 text-[#eb5939] border-b-gray-700">
             Education
           </a>
         </div>
