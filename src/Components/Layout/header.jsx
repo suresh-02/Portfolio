@@ -38,19 +38,19 @@ const Header = () => {
       <div
         className={
           nav
-            ? "fixed left-0 text-white md:hidden top-0 border-r border-b border-b-gray-900 border-r-gray-900 w-[100%] text-left  ml-0 p-2 h-[63%] bg-[#000300] ease-in-out duration-500"
+            ? "fixed left-0 text-white md:hidden top-0 border-r border-b border-b-gray-900 border-r-gray-900 w-[100%] text-left  ml-0 p-2 h-max-content bg-[#000300] ease-in-out duration-500"
             : " fixed left-[-100%]"
         }
       >
         <div className="flex items-center justify-between">
-          <h1 className=" z-20 text-4xl md:hidden text-[#00df9a]">
-            Portfolio.
-          </h1>
+        <h1 className=" bg-[#00df9a] w-max-content px-auto text-4xl font-bold py-[18px] text-black">
+        SH
+      </h1>
           <div onClick={HandleNav} className="block md:hidden">
             {!nav ? (
-              <AiOutlineMenuUnfold color="white" size={20} />
+              <AiOutlineMenuUnfold color="#eb5939" size={40} />
             ) : (
-              <AiOutlineClose color="white" size={20} />
+              <AiOutlineClose color="#eb5939" size={40} />
             )}
           </div>
         </div>
@@ -67,6 +67,9 @@ const Header = () => {
           </a>
           <a href="#intrest" className="p-4 text-[#eb5939] border-b  border-b-gray-700">
             Intrests
+          </a>
+          <a href="#intrest" className="p-4 text-[#eb5939] border-b  border-b-gray-700">
+            Works
           </a>
           <a href="#education" className="p-4 text-[#eb5939] border-b-gray-700">
             Education
