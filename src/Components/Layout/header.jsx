@@ -52,7 +52,7 @@ const Header = () => {
           Academics
         </a>
       </ul>
-      <div onClick={HandleNav} className=" flex justify-center mr-[80px] md:hidden">
+      <div onClick={HandleNav} className=" flex justify-center mr-[30px] md:hidden">
         {!nav ? <AiOutlineMenuUnfold color="white" size={20} /> : ""}``
       </div>
       <div
@@ -70,7 +70,7 @@ const Header = () => {
             {!nav ? (
               <AiOutlineMenuUnfold color="white" size={30} />
             ) : (
-              <AiOutlineClose color="white" className="mr-[80px]" size={30} />
+              <AiOutlineClose color="white" className="mr-[30px]" size={30} />
             )}
           </div>
         </div>
