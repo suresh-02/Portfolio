@@ -70,7 +70,7 @@ const Header = () => {
             {!nav ? (
               <AiOutlineMenuUnfold color="white" size={30} />
             ) : (
-              <AiOutlineClose color="white" className="mr-[30px]" size={30} />
+              <AiOutlineClose color="white" className="mr-[10px]" size={30} />
             )}
           </div>
         </div>
