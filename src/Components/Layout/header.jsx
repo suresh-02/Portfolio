@@ -10,7 +10,7 @@ const Header = () => {
   };
   return (
     <div className="flex items-center fixed p-4 bg-black justify-between mx-auto  px-4  w-full top-0  z-20">
-      <h1 className=" bg-[#00df9a] text-4xl font-bold p-[3px] text-black">
+      <h1 className=" bg-[#00df9a] text-4xl font-bold rounded-full px-[15px]  text-black">
         SH
       </h1>
 
@@ -52,7 +52,7 @@ const Header = () => {
           Academics
         </a>
       </ul>
-      <div onClick={HandleNav} className="block md:hidden">
+      <div onClick={HandleNav} className=" flex justify-center mr-[80px] md:hidden">
         {!nav ? <AiOutlineMenuUnfold color="white" size={20} /> : ""}``
       </div>
       <div
@@ -63,14 +63,14 @@ const Header = () => {
         }
       >
         <div className="flex items-center justify-between">
-        <h1 className=" bg-[#00df9a] w-max-content px-auto text-4xl font-bold py-[18px] text-black">
+        <h1 className=" bg-[#00df9a] w-max-[400px] px-[15px] rounded-full text-4xl font-bold  text-black">
         SH
       </h1>
           <div onClick={HandleNav} className="block md:hidden">
             {!nav ? (
-              <AiOutlineMenuUnfold color="#eb5939" size={40} />
+              <AiOutlineMenuUnfold color="white" size={30} />
             ) : (
-              <AiOutlineClose color="#eb5939" size={40} />
+              <AiOutlineClose color="white" className="mr-[80px]" size={30} />
             )}
           </div>
         </div>
