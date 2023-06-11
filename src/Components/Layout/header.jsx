@@ -15,21 +15,41 @@ const Header = () => {
       </h1>
 
       <ul className="text-white   hidden md:flex ">
-        <a href="#home" className="p-4 text-[#eb5939] border-b-[#00df9a] ">
+        <a href="#home" className="p-4 text-[#eb5939] border-b-[#00df9a] relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 before:left-0 before:bg-[#00fd9a]
+              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+              before:transition before:ease-in-out before:duration-300 ">
           Home
         </a>
-        <a href="#about" className="p-4 text-[#eb5939]  border-b-[#00df9a]">
+        <a href="#about" className="p-4 text-[#eb5939]  border-b-[#00df9a] relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 before:left-0 before:bg-[#00fd9a]
+              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+              before:transition before:ease-in-out before:duration-300">
           About
         </a>
-        <a href="#skills" className="p-4 text-[#eb5939] border-b-[#00df9a]">
+        <a href="#skills" className="p-4 text-[#eb5939] border-b-[#00df9a] relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 before:left-0 before:bg-[#00fd9a]
+              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+              before:transition before:ease-in-out before:duration-300">
           Skills
         </a>
-        <a href="#intrest" className="p-4  text-[#eb5939] border-b-[#00df9a] ">
+        <a href="#intrest" className="p-4  text-[#eb5939] border-b-[#00df9a] relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 before:left-0 before:bg-[#00fd9a]
+              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+              before:transition before:ease-in-out before:duration-300">
           Intrests
         </a>
-        <a href="#works" className="p-4 text-[#eb5939] border-b-[#00df9a]">works</a>
-        <a href="#education" className="p-4 text-[#eb5939] border-b-[#00df9a]">
-          Education
+        <a href="#works" className="p-4 text-[#eb5939] border-b-[#00df9a] relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 before:left-0 before:bg-[#00fd9a]
+              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+              before:transition before:ease-in-out before:duration-300">
+                works
+                </a>
+        <a href="#education" className="p-4 text-[#eb5939] border-b-[#00df9a] relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 before:left-0 before:bg-[#00fd9a]
+              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+              before:transition before:ease-in-out before:duration-300">
+          Academics
         </a>
       </ul>
       <div onClick={HandleNav} className="block md:hidden">
@@ -72,7 +92,7 @@ const Header = () => {
             Works
           </a>
           <a href="#education" className="p-4 text-[#eb5939] border-b-gray-700">
-            Education
+            Academics
           </a>
         </div>
       </div>
