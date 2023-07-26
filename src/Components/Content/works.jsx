@@ -1,12 +1,8 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Works = () => {
 
-  const navigate = useNavigate();
-  const handleClick = () => {
-    navigate('/projects'); // Navigate to the '/about' route
-  };
   return (
     <div className='flex flex-col h-[100vh] justify-center items-center' id='works'> 
         <>
@@ -22,9 +18,9 @@ const Works = () => {
         I'm currently improving my <span className='text-[#00df9a]' >HTML, CSS, JavaScript, and ReactJS</span> skills by developing front-end applications.
         </p>
         <div className=' md:flex justify-center items-center  py-[50px]'>
-        <button onClick={handleClick} class="bg-transparent hover:bg-[#eb5939] text-[#eb5939] font-semibold hover:text-black py-2 px-4 border border-[#B7AB98] hover:border-transparent rounded after:transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-150">
+        <Link to="/projects" class="bg-transparent hover:bg-[#eb5939] text-[#eb5939] font-semibold hover:text-black py-2 px-4 border border-[#B7AB98] hover:border-transparent rounded after:transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-150">
             Projects
-          </button>
+          </Link>
         </div>
         </main>
     </div>
