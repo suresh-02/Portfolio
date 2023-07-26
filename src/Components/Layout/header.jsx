@@ -1,54 +1,49 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AiOutlineMenuUnfold, AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
-
   const HandleNav = () => {
     setNav(!nav);
   };
-  return (
-    <div className="flex items-center fixed p-4 bg-black justify-between mx-auto  px-4  w-full top-0  z-20">
-      <h1 className=" bg-[#00df9a] text-4xl font-bold rounded-full px-[15px]  text-black">
-        SH
-      </h1>
 
-      <ul className="text-white   hidden md:flex ">
-        <a href="#home" className="p-4 text-[#eb5939] border-b-[#00df9a] relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-              before:bottom-0 before:left-0 before:bg-[#00fd9a]
-              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-              before:transition before:ease-in-out before:duration-300 ">
+  const [selected, setSelected] = useState(window.location.hash.substr(1));
+  useEffect(() => {
+    const handleHashChange = () => {
+      const newId = window.location.hash.substr(1);
+      setSelected(newId);
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  });
+  return (
+    <div className="header">
+      <h1 className="logo">SH</h1>
+      <ul>
+        <a href="#home" className={selected === "home" ? "active" : ""}>
           Home
         </a>
-        <a href="#about" className="p-4 text-[#eb5939]  border-b-[#00df9a] relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-              before:bottom-0 before:left-0 before:bg-[#00fd9a]
-              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-              before:transition before:ease-in-out before:duration-300">
+        <a href="#about" className={selected === "about" ? "active" : ""}>
           About
         </a>
-        <a href="#skills" className="p-4 text-[#eb5939] border-b-[#00df9a] relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-              before:bottom-0 before:left-0 before:bg-[#00fd9a]
-              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-              before:transition before:ease-in-out before:duration-300">
+        <a href="#skills" className={selected === "skills" ? "active" : ""}>
           Skills
         </a>
-        <a href="#intrest" className="p-4  text-[#eb5939] border-b-[#00df9a] relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-              before:bottom-0 before:left-0 before:bg-[#00fd9a]
-              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-              before:transition before:ease-in-out before:duration-300">
-          Intrests
+        <a href="#interest" className={selected === "interest" ? "active" : ""}>
+          Interests
         </a>
-        <a href="#works" className="p-4 text-[#eb5939] border-b-[#00df9a] relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-              before:bottom-0 before:left-0 before:bg-[#00fd9a]
-              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-              before:transition before:ease-in-out before:duration-300">
-                works
-                </a>
-        <a href="#education" className="p-4 text-[#eb5939] border-b-[#00df9a] relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-              before:bottom-0 before:left-0 before:bg-[#00fd9a]
-              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-              before:transition before:ease-in-out before:duration-300">
+        <a href="#works" className={selected === "works" ? "active" : ""}>
+          Works
+        </a>
+        <a
+          href="#education"
+          className={selected === "education" ? "active" : ""}
+        >
           Academics
         </a>
       </ul>
@@ -63,37 +58,23 @@ const Header = () => {
         }
       >
         <div className="flex items-center justify-between">
-        <h1 className=" bg-[#00df9a] w-max-[400px] px-[15px] rounded-full text-4xl font-bold  text-black">
-        SH
-      </h1>
+          <h1 className="logo">SH</h1>
           <div onClick={HandleNav} className="block md:hidden">
             {!nav ? (
               <AiOutlineMenuUnfold color="white" size={30} />
             ) : (
-              <AiOutlineClose color="white"  size={30} />
+              <AiOutlineClose color="white" size={30} />
             )}
           </div>
         </div>
 
-        <div className="uppercase font-bold flex flex-col   ">
-          <a href="#home" className="p-4 text-[#eb5939] border-b border-b-gray-700 ">
-            Home
-          </a>
-          <a href="#about" className="p-4 text-[#eb5939] border-b border-b-gray-700 ">
-            About
-          </a>
-          <a href="#skills" className="p-4 text-[#eb5939] border-b border-b-gray-700">
-            Skills
-          </a>
-          <a href="#intrest" className="p-4 text-[#eb5939] border-b  border-b-gray-700">
-            Intrests
-          </a>
-          <a href="#intrest" className="p-4 text-[#eb5939] border-b  border-b-gray-700">
-            Works
-          </a>
-          <a href="#education" className="p-4 text-[#eb5939] border-b-gray-700">
-            Academics
-          </a>
+        <div className="slide-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#interest">Interests</a>
+          <a href="#works">Works</a>
+          <a href="#education">Academics</a>
         </div>
       </div>
     </div>

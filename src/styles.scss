@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  transition: 100ms;
+}
+
+body {
+  background-color: #000300;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Inconsolata";
+}
+
+.header {
+  @apply flex items-center fixed p-4 bg-black justify-between mx-auto px-4 w-full top-0 z-20;
+  .logo {
+    @apply bg-[#00df9a] text-4xl font-bold rounded-full px-[15px] text-black;
+  }
+  ul {
+    @apply gap-6 text-primary text-lg hidden md:flex;
+    > a {
+      @apply p-1 px-4 rounded transition-all duration-300;
+      &:hover,
+      &.active {
+        background-color: #9797975c;
+      }
+    }
+  }
+
+  .slide-nav {
+    @apply uppercase font-bold flex flex-col;
+    a {
+      @apply p-4 text-primary border-b border-b-gray-700;
+    }
+  }
+}

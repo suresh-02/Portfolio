@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Layout/header";
 import Intro from "./intro";
 import About from "./about";
-import Intrest from "./Intrest";
+import Interest from "./Interest";
 import Works from "./works";
 import Education from "./education";
 import Skills from "./skills";
@@ -14,7 +14,7 @@ export const Home = () => {
       <Intro />
       <About />
       <Skills />
-      <Intrest />
+      <Interest />
       <Works />
       <Education />
     </>

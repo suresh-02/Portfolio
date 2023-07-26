@@ -21,10 +21,17 @@ const Intro = () => {
             loop
           />
         </div>
-        <p className="text-[#B7AB98]  text-2xl mt-[50px] px-4 md:text-4xl">An <span className="text-[#eb5939]">aspiring</span> Frontend developer, with a <span className="text-[#eb5939]">passion</span> in making user interactive websites.</p>
-        <a  href="https://dev.to/suresh02"  class="bg-transparent mt-[50px] hover:bg-[#eb5939] text-[#eb5939] font-semibold hover:text-black py-2 px-4 border border-[#B7AB98] hover:border-transparent rounded after:transition duration-500 ease-in-out   transform hover:-translate-y-2 hover:scale-120">
-            Check out my blogs..!
-          </a>
+        <p className="text-[#B7AB98]  text-2xl mt-[50px] px-4 md:text-4xl">
+          An <span className="text-primary">aspiring</span> Frontend developer,
+          with a <span className="text-primary">passion</span> in making user
+          interactive websites.
+        </p>
+        <a
+          href="https://dev.to/suresh02"
+          className="bg-transparent mt-[50px] hover:bg-primary text-primary font-semibold hover:text-black py-2 px-4 border border-[#B7AB98] hover:border-transparent rounded after:transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-110"
+        >
+          Check out my blogs..!
+        </a>
       </div>
     </div>
   );

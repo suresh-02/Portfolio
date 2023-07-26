@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { gamehub } from "../../../src/assets/gameHub.png";
 export const Projects = () => {
   useState(() => {
     console.log("Projects");
@@ -7,7 +6,7 @@ export const Projects = () => {
   return (
     <div>
       <h1
-        className=" text-6xl font-bold mb-[80px] max-w-max mx-auto  text-[#eb5939] relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+        className=" text-6xl font-bold mb-[80px] max-w-max mx-auto  text-primary relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
               before:bottom-0 before:left-0 before:bg-[#00fd9a]
               before:hover:scale-x-100 before:scale-x-0 py-4 before:origin-top-left
               before:transition before:ease-in-out before:duration-300"
@@ -18,18 +17,19 @@ export const Projects = () => {
       <div>
         <div>
           <a
-            href="#"
-            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+            href="#/"
+            className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
           >
             <img
-              class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+              className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
               src="../../../src/assets/gameHub.png"
+              alt="Project_Img"
             />
-            <div class="flex flex-col justify-between p-4 leading-normal">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <div className="flex flex-col justify-between p-4 leading-normal">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 Game Hub
               </h5>
-              <p class="mb-3 font-normal text-left text-gray-700 dark:text-gray-400">
+              <p className="mb-3 font-normal text-left text-gray-700 dark:text-gray-400">
                 Users can Theme toggle- light and dark, User can navigate to
                 different game genres and filter games according to game
                 categories Server-side Image optimization is enables increased
@@ -39,7 +39,7 @@ export const Projects = () => {
               <div className="inline-flex gap-4">
                 <a
                   href="https://github.com/suresh-02/game-hub"
-                  class="inline-flex items-center w-[100px]  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  className="inline-flex items-center w-[100px]  px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   Git Hub
                   <div className="icon h2 px-[5px]">
@@ -58,11 +58,11 @@ export const Projects = () => {
                 </a>
                 <a
                   href="https://game-hub-six-pi.vercel.app/"
-                  class="inline-flex items-center px-3 w-[100px] py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  className="inline-flex items-center px-3 w-[100px] py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   Live
                   <svg
-                    class="w-3.5 h-3.5 ml-2"
+                    className="w-3.5 h-3.5 ml-2"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
