@@ -1,8 +1,4 @@
-import gamehub from "../../assets/gameHub.png";
-import erp from "../../assets/erp.png";
-import attendance from "../../assets/attendance.png";
-import newsapp from "../../assets/newsapp.png";
-
+import React, { useState } from "react";
 export const Projects = () => {
   const data = [
     {

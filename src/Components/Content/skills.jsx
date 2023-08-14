@@ -24,7 +24,7 @@ export default function Skills() {
       id="skills"
     >
       <h1
-        className=" text-6xl font-bold mb-[80px] max-w-max mx-auto text-[#eb5939] relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+        className=" text-6xl font-bold mb-[80px] max-w-max mx-auto text-primary relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
               before:bottom-0 before:left-0 before:bg-[#00fd9a]
               before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
               before:transition before:ease-in-out before:duration-300"
