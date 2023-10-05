@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import attendance from "../../assets/attendance.png";
+import erp from "../../assets/erp.png";
+import gameHub from "../../assets/gameHub.png";
+import newsapp from "../../assets/newsapp.png";
+import devtalk from "../../assets/devTalk.png";
 export const Projects = () => {
   const data = [
     {
@@ -22,7 +27,7 @@ export const Projects = () => {
       content:
         "Users can Theme toggle- light and dark, User can navigate to different game genres and filter games according to game categories. Server-side Image optimisation enables increased performance of application Custom Hooks to make each component as pure components and reusable components",
       glink: "https://github.com/suresh-02/game-hub",
-      image: gamehub,
+      image: gameHub,
     },
     {
       id: 4,
@@ -32,13 +37,21 @@ export const Projects = () => {
       glink: "https://github.com/suresh-02/game-hub",
       image: newsapp,
     },
+    {
+      id: 5,
+      title: "Dev-Talk",
+      content:
+        "Users can register seperate account and also can login to the existing account.Users can also write and post new blogs.The users can also update or upload profile picture of their own account.The authentication and authorization are implemented using JWT.",
+      glink: "https://github.com/suresh-02/Dev-talk",
+      image: devtalk,
+    },
     // More objects...
   ];
   console.log(data);
 
   return (
     <div>
-      <h1 className="text-[#00fd9a] text-6xl font-bold pt-[30px] relative before:content-[''] before:absolute before:block] before:h-[2px]">
+      <h1 className="text-[#00fd9a] text-6xl font-bold pt-[30px] flex justify-center items-center relative before:content-[''] before:absolute before:block] before:h-[2px]">
         Projects
       </h1>
       <div className="grid sm:grid-cols-1 md:grid-cols-3 py-[30px] px-[30px] gap-[50px] items-center justify-center">
